@@ -85,7 +85,7 @@ public class ClientManager implements Runnable {
                 try {
                     //Отпрпвить сообщение всем пользователям, кроме себя самого
                     if (!client.name.equals(name)) {
-                        client.bufferedWriter.write(message + " не там");
+                        client.bufferedWriter.write(message);
                         client.bufferedWriter.newLine();
                         client.bufferedWriter.flush();
                     }
